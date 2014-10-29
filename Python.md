@@ -20,18 +20,22 @@ Nesting
     
 ###Tuples
 
----
----
+
 
 ###Files
 
----
----
+
 
 ###Other Core Types
 
----
----
+
+#### Useful Tips
+
+python3 -m venv venv
+
+python3 is the command
+
+source {virual env}/bin/activate
 
 10/11/2014 9:48:10 PM 
 
