@@ -31,12 +31,15 @@ Nesting
 
 #### Useful Tips
 
+@ = decorator
+
 python3 -m venv venv
 
 python3 is the command
 
 source {virual env}/bin/activate
 
+pip install flask
 10/11/2014 9:48:10 PM 
 
 ---
