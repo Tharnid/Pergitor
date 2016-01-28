@@ -39,6 +39,13 @@ python3 is the command
 
 source {virual env}/bin/activate
 
+mutable = value can change
+immutable = value cannot change
+
+env/bin/python manage.py runserver 0.0.0.0:8000
+
+app is a self contained module that lives in your Django project
+---
 pip install flask
 10/11/2014 9:48:10 PM 
 
