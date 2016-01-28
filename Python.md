@@ -45,6 +45,15 @@ immutable = value cannot change
 env/bin/python manage.py runserver 0.0.0.0:8000
 
 app is a self contained module that lives in your Django project
+
+#### Generate a new app
+
+	django-admin startapp <nameofapp>
+
+#### Django-debug-toolbar
+
+	pip install django-debug-toolbar
+
 ---
 pip install flask
 10/11/2014 9:48:10 PM 
