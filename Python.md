@@ -54,6 +54,8 @@ app is a self contained module that lives in your Django project
 
 	pip install django-debug-toolbar
 
+**HMM no exercise files**
+
 ---
 pip install flask
 10/11/2014 9:48:10 PM 
