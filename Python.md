@@ -65,6 +65,8 @@ python manage.py migrate - applys migrations
 
 python manage.py shell - Shell
 
+python manage.py createsuperuser (creates user)
+
 mybook = (put in book)
 
 mybook.save()
@@ -84,6 +86,9 @@ Book.objects.filter(attribute="whatever)
 Book.objects.filter(attribute__contains="whatever)
 
 Book.objects.filter(attribute__startswith="whatever)
+
+**Django Admin**
+
 
 **HMM no exercise files**
 
