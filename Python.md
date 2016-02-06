@@ -56,6 +56,34 @@ app is a self contained module that lives in your Django project
 
 	pip freeze (shows what's installed)
 
+#### Other Django commands
+---
+
+python manage.py makemigrations - creates migration file
+
+python manage.py migrate - applys migrations
+
+python manage.py shell - Shell
+
+mybook = (put in book)
+
+mybook.save()
+
+**Use dot notation to access any attribute**
+
+book.title i.e book.review
+
+Book.objects.all() // Retrieve all books
+
+from books.models import Book
+
+**Filter query**
+
+Book.objects.filter(attribute="whatever)
+
+Book.objects.filter(attribute__contains="whatever)
+
+Book.objects.filter(attribute__startswith="whatever)
 
 **HMM no exercise files**
 
