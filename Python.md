@@ -37,7 +37,7 @@ python3 -m venv venv
 
 python3 is the command
 
-source {virual env}/bin/activate
+source {virtual env}/bin/activate
 
 mutable = value can change
 immutable = value cannot change
@@ -53,6 +53,9 @@ app is a self contained module that lives in your Django project
 #### Django-debug-toolbar
 
 	pip install django-debug-toolbar
+
+	pip freeze (shows what's installed)
+
 
 **HMM no exercise files**
 
