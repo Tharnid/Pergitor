@@ -39,6 +39,8 @@ python3 is the command
 
 source {virtual env}/bin/activate
 
+pip install "Django<1.9"
+
 mutable = value can change
 immutable = value cannot change
 
