@@ -1,5 +1,7 @@
-{% if message %}
-  {{message}}
+{% if gr_list %}
+  {% for gr in gr_list %}
+    {{gr}}</br >
+  {% endfor %}
 {% else %}
-  Hello Djangonites!!!
+  :-/
 {% endif %}
