@@ -1,15 +1,19 @@
+{% extends "grr/master.html" %}
 {% load humanize %}
-{% if gr_list %}
-  <dl>
-    {% for gr in gr_list %}
-      <dt>{{gr.text}}</dt>
-      <dd>
-      <a href="{{gr.id}}">{{gr.created_on|naturaltime}}</a>
-        {% if gr.via %}
-          <a href="{{gr.via}}">/via</a>
-        {% endif %}
-    {% endfor %}
-  </dl>
-{% else %}
-  :-/
-{% endif %}
+
+{% block content %}
+  {% if gr_list %}
+    <dl>
+      {% for gr in gr_list %}
+        <dt>{{gr.text}}</dt>
+        <dd>
+        <a href="{{gr.id}}">{{gr.created_on|naturaltime}}</a>
+          {% if gr.via %}
+            <a href="{{gr.via}}">/via</a>
+          {% endif %}
+      {% endfor %}
+    </dl>
+  {% else %}
+    :-/
+  {% endif %}
+{% endblock %}

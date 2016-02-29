@@ -1,8 +1,13 @@
-<dl>
-  <dd>{{gr.text}}</dd>
-  <dt>{{gr.created_on}}
-    {%if gr.via%}
-      <a href="{{gr.via}}">/via</a>
-    {%endif%}
-  </dt>
-</dl>
+{% extends "grr/master.html" %}
+
+{%  block title %}Grr Details{% endblock %}
+{% block content %}
+  <dl>
+    <dd>{{gr.text}}</dd>
+    <dt>{{gr.created_on}}
+      {%if gr.via%}
+        <a href="{{gr.via}}">/via</a>
+      {%endif%}
+    </dt>
+  </dl>
+{% endblock %}
