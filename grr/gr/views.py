@@ -14,3 +14,8 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         return Gr.objects.order_by('-created_on')[:20]
+
+class DetailView(generic.DetailView):
+    model = Gr
+    template_name = 'grr/detail.html'
+    context_object_name = 'gr'

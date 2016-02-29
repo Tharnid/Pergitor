@@ -1,7 +1,15 @@
+{% load humanize %}
 {% if gr_list %}
-  {% for gr in gr_list %}
-    {{gr}}</br >
-  {% endfor %}
+  <dl>
+    {% for gr in gr_list %}
+      <dt>{{gr.text}}</dt>
+      <dd>
+      <a href="{{gr.id}}">{{gr.created_on|naturaltime}}</a>
+        {% if gr.via %}
+          <a href="{{gr.via}}">/via</a>
+        {% endif %}
+    {% endfor %}
+  </dl>
 {% else %}
   :-/
 {% endif %}
